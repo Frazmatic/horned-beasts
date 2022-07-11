@@ -1,3 +1,6 @@
+# Learning React with Code Fellows Course 301
+## Author: @ Joshua Frazer
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
