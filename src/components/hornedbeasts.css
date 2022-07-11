@@ -1,0 +1,11 @@
+
+
+li {
+    border: solid gray 1px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+img {
+    max-height: 15rem;
+}
