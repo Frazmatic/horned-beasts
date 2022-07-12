@@ -1,4 +1,3 @@
-
 # Learning React with Code Fellows Course 301
 ## Student: Joshua Frazer
 
