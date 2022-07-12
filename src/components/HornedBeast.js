@@ -22,8 +22,10 @@ class HornedBeast extends Component{
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>
                     <Card.Text>
-                        {this.props.description}
-                        <p><img src={Heart} alt={"heart icon"}></img> : {this.state.favorited}</p>
+                        {this.props.description}                           
+                    </Card.Text>
+                    <Card.Text>
+                        <img src={Heart} alt={"heart icon"}></img> : {this.state.favorited}                         
                     </Card.Text>
                     <Button 
                         variant="primary" 

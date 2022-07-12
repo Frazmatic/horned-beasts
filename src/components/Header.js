@@ -1,13 +1,21 @@
 import { Component } from "react";
-
+//https://react-bootstrap.github.io/components/accordion/#accordion-props
+import Accordion from 'react-bootstrap/Accordion';
 
 class Header extends Component{
 
     render(){
         return(
-            <section id="header">
-                <h1>Lab 01 Horned Beast App</h1>
-            </section>
+            <Accordion>
+                <Accordion.Item eventKey="0">
+                    <Accordion.Header>
+                        <h1 >Horned Beast By Joshua Frazer</h1>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                        <p>Well, hello there!</p>
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>
         );
     }
 }
