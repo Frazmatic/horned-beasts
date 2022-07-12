@@ -26,3 +26,15 @@ Finish time: 1424 hrs
 Actual time needed to complete: 17 minutes
 
 ---
+
+Number and name of feature: Feature #2: Allow users to vote for their favorite beast
+
+Estimate of time needed to complete: 1.5 hours
+
+Start time: 1430 hrs
+
+Finish time:
+
+Actual time needed to complete: 
+
+---
