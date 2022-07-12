@@ -33,8 +33,20 @@ Estimate of time needed to complete: 1.5 hours
 
 Start time: 1430 hrs
 
-Finish time:
+Finish time: 1430 hours
 
-Actual time needed to complete: 
+Actual time needed to complete: 1 hour 
+
+---
+
+Number and name of feature: Stretch Goal: Add Interaction
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 1535 hrs
+
+Finish time: 
+
+Actual time needed to complete:  
 
 ---
