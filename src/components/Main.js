@@ -1,6 +1,10 @@
 import { Component } from "react";
 import HornedBeast from './HornedBeast'
-import './main.css';
+
+//https://react-bootstrap.github.io/layout/grid
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Main extends Component{
     constructor(){
@@ -38,18 +42,20 @@ class Main extends Component{
     //I could have returned just a ul here, but thought why not leave it open for adding things in the future
     render(){
         return(
-            <section className="main">
-                <ul>
+            <Container fluid>
+                <Row sm={1} md={3} lg={4}>
                     {this.beasts.map(b => 
-                        <HornedBeast 
-                            key={b._id.toString()}
-                            title={b.title}
-                            image_url={b.image_url}
-                            description={b.description}
-                        />    
+                        <Col>
+                            <HornedBeast 
+                                key={b._id.toString()}
+                                title={b.title}
+                                image_url={b.image_url}
+                                description={b.description}
+                            />
+                        </Col>
                     )}
-                </ul>
-            </section>
+                </Row>  
+            </Container>
         );
     }
 }
