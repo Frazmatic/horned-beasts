@@ -1,5 +1,8 @@
 import { Component } from "react";
-import './hornedbeasts.css';
+
+//https://react-bootstrap.github.io/components/cards/
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends Component{
     constructor(){
@@ -8,11 +11,16 @@ class HornedBeast extends Component{
 
     render(){
         return(
-            <li className="horned-beast">
-            <h1>{this.props.title}</h1>
-            <img src={this.props.image_url} alt={this.props.description}></img>
-            <p>{this.props.description}</p>
-            </li>
+            <Card className="horned-beast" style={{height: '100%'}}>
+                <Card.Img variant="top" src={this.props.image_url} />
+                <Card.Body>
+                    <Card.Title>{this.props.title}</Card.Title>
+                    <Card.Text>
+                        {this.props.description}
+                    </Card.Text>
+                    <Button variant="primary" size="lg" style={{width: "100%"}}>Vote Favorite</Button>
+                </Card.Body>
+            </Card>
         );
     }
 }

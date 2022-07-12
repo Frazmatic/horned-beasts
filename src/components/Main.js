@@ -1,10 +1,16 @@
 import { Component } from "react";
 import HornedBeast from './HornedBeast'
-import './main.css';
+
+//https://react-bootstrap.github.io/layout/grid
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Main extends Component{
     constructor(){
         super();
+        //so far this is just read only, but seems like the type of things we might manipulate in the future
+        //therefore treating it as state
         this.beasts = [{
             "_id": 1,
             "image_url": "http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg",
@@ -32,21 +38,24 @@ class Main extends Component{
             "horns": 1
         }];
     }
-
+    
+    //I could have returned just a ul here, but thought why not leave it open for adding things in the future
     render(){
         return(
-            <section className="main">
-                <ul>
+            <Container fluid>
+                <Row sm={1} md={3} lg={4}>
                     {this.beasts.map(b => 
-                        <HornedBeast 
-                            key={b._id.toString()}
-                            title={b.title}
-                            image_url={b.image_url}
-                            description={b.description}
-                        />    
+                        <Col>
+                            <HornedBeast 
+                                key={b._id.toString()}
+                                title={b.title}
+                                image_url={b.image_url}
+                                description={b.description}
+                            />
+                        </Col>
                     )}
-                </ul>
-            </section>
+                </Row>  
+            </Container>
         );
     }
 }
