@@ -9,9 +9,9 @@ class HornedBeast extends Component{
     render(){
         return(
             <li className="horned-beast">
-            <h1>{this.props.title}</h1>
-            <img src={this.props.image_url} alt={this.props.description}></img>
-            <p>{this.props.description}</p>
+                <h1>{this.props.title}</h1>
+                <img src={this.props.image_url} alt={this.props.description}></img>
+                <p>{this.props.description}</p>
             </li>
         );
     }
