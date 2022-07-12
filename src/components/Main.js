@@ -19,8 +19,7 @@ class Main extends Component{
             <Container fluid>
                 <Row xs={1} sm={2}md={3} lg={4} xl={5}>
                     {this.state.beasts.map(b => 
-                        <Col>
-                            key={b._id.toString()}
+                        <Col key={b._id.toString()}>
                             <HornedBeast 
                                 title={b.title}
                                 image_url={b.image_url}
