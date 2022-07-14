@@ -2,6 +2,7 @@
 ## Student: Joshua Frazer
 
 ---
+## Lab 2
 
 Number and name of feature: Feature 3: Bootstrap
 
@@ -50,3 +51,27 @@ Finish time: 1632 hrs
 Actual time needed to complete: 57 minutes  
 
 ---
+
+## Lab 3
+
+Number and name of feature: Feature #1: Display a Modal
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 1605
+
+Finish time: 1749
+
+Actual time needed to complete: 1 hr 44 minutes
+
+---
+
+Number and name of feature: Stretch Goal: Fuzzy search
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1750
+
+Finish time: _____
+
+Actual time needed to complete: _____
