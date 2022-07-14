@@ -89,8 +89,8 @@ Estimate of time needed to complete: 2 hours
 
 Start time: 1230
 
-Finish time: 
+Finish time: 1430
 
-Actual time needed to complete:
+Actual time needed to complete: Exactly Two Hours on the dot! I'm getting better at estimating.
 
 ---
