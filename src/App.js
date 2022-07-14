@@ -10,7 +10,7 @@ import { Component } from "react";
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = {currentPic: null, currentTitle: null, cumodalShowing: false};
+    this.state = {currentPic: null, currentTitle: null, modalShowing: false};
   }
 
   handlePicClick = (aBeast) => {

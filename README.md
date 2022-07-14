@@ -2,6 +2,7 @@
 ## Student: Joshua Frazer
 
 ---
+
 ## Lab 2
 
 Number and name of feature: Feature 3: Bootstrap
@@ -77,3 +78,19 @@ Finish time: 1925
 Actual time needed to complete: 1 hour 30 minutes
 
 *I had to learn both regular expressions and React Bootstrap Form handling for this! Surprisingly quick.*
+
+---
+
+## Lab 4
+
+Number and name of feature: Feature 1. Filter by Numbers of Horns
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1230
+
+Finish time: 
+
+Actual time needed to complete:
+
+---
