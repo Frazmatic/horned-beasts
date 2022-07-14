@@ -2,9 +2,6 @@ import { Component } from "react";
 import Modal from 'react-bootstrap/Modal';
 
 class SelectedBeast extends Component {
-    constructor(props){
-        super(props)
-    }
 
     render(){
         return(
@@ -15,9 +12,6 @@ class SelectedBeast extends Component {
                 <Modal.Body>
                     <img src={this.props.picURL} alt={this.props.title} style={{width: "100%"}}></img>
                 </Modal.Body>
-                <Modal.Footer>
-          
-                </Modal.Footer>
             </Modal>
         );
     }
