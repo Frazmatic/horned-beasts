@@ -15,11 +15,19 @@ class HornedBeast extends Component{
         this.setState({favorited: this.state.favorited + 1});
     }
 
+    handlePicClick = (e) => {
+        this.props.handlePicClick(this);
+    }
+
     render(){
         return(
+            //wrapping in an anchor to make whole card clickable: https://stackoverflow.com/questions/53973644/making-whole-card-clickable-in-reactstrap
             <Card className="horned-beast" style={{height: '100%'}}>
-                <Card.Img variant="top" src={this.props.image_url} />
+                <a onClick={this.handlePicClick}>
+                    <Card.Img variant="top" src={this.props.image_url}/>
+                </a>
                 <Card.Body>
+                    
                     <Card.Title>{this.props.title}</Card.Title>
                     <Card.Text>
                         {this.props.description}                           
@@ -27,6 +35,7 @@ class HornedBeast extends Component{
                     <Card.Text>
                         <img src={Heart} alt={"heart icon"}></img> : {this.state.favorited}                         
                     </Card.Text>
+                    
                     <Button 
                         variant="primary" 
                         size="lg" 
@@ -37,6 +46,8 @@ class HornedBeast extends Component{
                     </Button>
                 </Card.Body>
             </Card>
+            
+            
         );
     }
 }
